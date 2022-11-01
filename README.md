@@ -70,3 +70,17 @@ sudo service nginx start
 ````
 vagrant plugin COMMAND -h
 ````
+## Vagrant::Hostsupdater
+Ce plugin ajoute une entrée à votre fichier /etc/hosts sur le système hôte.
+
+Sur les commandes up, resume et reload, il essaie d'ajouter les informations, si elles n'existent pas déjà dans votre fichier hosts. S'il doit être ajouté, un mot de passe administrateur vous sera demandé, car il utilise sudo pour modifier le fichier.
+
+Lors de l'arrêt, de la destruction et de la suspension, ces entrées seront à nouveau supprimées. En définissant config.hostsupdater.remove_on_suspend = false, suspend et halt ne les supprimera pas.
+````
+$ vagrant plugin install vagrant-hostsupdater
+
+config.vm.network :private_network, ip: "192.168.3.10"
+config.vm.hostname = "www.testing.de"
+config.hostsupdater.aliases = ["alias.testing.de", "alias2.somedomain.com"]
+
+````
