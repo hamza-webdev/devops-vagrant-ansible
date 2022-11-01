@@ -1,5 +1,6 @@
 RAM = 1024
 CPU = 1
+IP = "10.0.0.10"
 
 Vagrant.configure("2") do |config|
     # Configure load balancer machine

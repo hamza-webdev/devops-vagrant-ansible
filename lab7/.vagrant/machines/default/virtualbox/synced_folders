@@ -1,0 +1,1 @@
+{"virtualbox":{"/usr/share/nginx/html/":{"guestpath":"/usr/share/nginx/html","hostpath":"C:/Users/AY023176/Documents/dev/Mes-Scripts/devops-vagrant-ansible/lab7/src","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/AY023176/Documents/dev/Mes-Scripts/devops-vagrant-ansible/lab7","disabled":false,"__vagrantfile":true}}}
